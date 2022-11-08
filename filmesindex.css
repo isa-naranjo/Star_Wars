@@ -1,0 +1,342 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+nav{
+    position: sticky;
+    background:transparent;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    z-index: 99;
+}
+
+.start{
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    padding: 40px 45px;
+    cursor: pointer;
+    top: 0px;
+}
+
+    .deathstar{
+        height: 55px;
+    }
+
+
+.navbar{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    top: 20px;
+}
+
+.display{
+    position: fixed;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    top: 20px;
+
+}
+
+    .displaybackground{
+        width: 85%;
+        margin: 0px 5px;
+    }
+
+        .textdisplay{
+            position: fixed;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            float: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            top: 5px;
+        }
+
+        .textdisplay li{
+            display: inline-block;
+            line-height: 10px;
+            margin: 40px 5px;
+        }
+            .textdisplay li a{
+                color: white;
+                padding: 10px 30px;
+                border-radius: 3px;
+            }
+
+            li a.active, li a:hover{
+                background-color: rgb(83, 108, 129);
+                transition: 2s;
+                cursor: pointer;
+            }
+
+.signup{
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    right: 40px;
+    top: 45px;
+    cursor: pointer;
+}
+    .login{
+        position: fixed;
+        right: 100px;
+        top: 55px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    .log{height: 40px;
+    margin-top: -20px;}
+
+#check{
+    display: none;
+}
+
+
+.body{
+    background-image: url(imagenes/original\ 1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 100px
+
+}
+
+
+.titulo{
+    position: absolute;
+    top: 130px;
+    left: 700px;
+    font-size: 30px;
+    letter-spacing: 20px;
+    color: white;
+}
+
+
+.todo{
+    position: absolute;
+    left: 150px;
+    margin-top: 120px;
+}
+.Hans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.rect{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 1300px;
+    right: 40px;
+
+}
+
+    .filmscontainer{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+
+.trailers{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: -400px;
+    align-items: center;
+
+}
+
+        .trailers input{
+            display: flex;
+            flex-direction: row;
+        }
+        #fav{
+            display: none;
+        }
+
+        .trailers iframe{
+            border-radius: 5px;
+        }
+
+        .trailers p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            letter-spacing: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .trailers button{
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 5px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .trailers button:hover{
+            background: #7FEBFB;
+            color: #00424B;
+            transition: 0.2s;
+        }
+
+.trailer1{
+    position: relative;
+    left: 20px;
+    opacity: 70%;
+
+
+}
+        .fav1{
+            position: fixed;
+            width: 20px;
+            top: 580px;
+            left: 530px;
+
+        }
+
+        .fav1:hover{
+            transform: scale(1.15);
+            transition: 0.5s;
+
+        }
+
+            .heart1{
+                width: 25px;
+
+            }
+
+    .btntrailer1{
+        width: 380px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 10px;
+    }
+
+    .trailers input img{
+        position: sticky;
+        top: 10px;
+        width: 10px;
+    }
+
+.trailer2{
+    position: relative;
+    z-index: 99;
+    opacity: 100%;
+
+}
+
+        .fav2{
+            position: fixed;
+            width: 20px;
+            top: 590px;
+            left: 980px;
+
+        }
+
+        .fav2:hover{
+            transform: scale(1.15);
+            transition: 0.5s;
+        }
+
+            .heart2{
+                width: 30px;
+
+            }
+
+
+    .btntrailer2{
+        width: 450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 10px;
+    }
+
+        .btntrailer2:hover{
+            background-color: 7FEBFB;
+            transition: 0.5s;
+        }
+
+
+    .trailer3{
+        position: relative;
+        right: 20px;
+        opacity: 70%;
+
+
+    }
+        .btntrailer3{
+            width: 380px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 10px;
+        }
+
+        .fav3{
+            position: fixed;
+            width: px;
+            top: 580px;
+            left: 1350px;
+
+        }
+
+        .fav3:hover{
+            transform: scale(1.15);
+            transition: 0.5s;
+        }
+
+            .heart3{
+                width: 25px;
+
+            }
+
+            .trailers .controlizq{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                object-fit: cover;
+                left: 5%;
+                top: 60%;
+                transform: translate(0%, -50%);
+            }
+
+            .trailers .controlder{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                object-fit: cover;
+                right: 5%;
+                top: 60%;
+                transform: translate(0%, -50%);
+            }
+
