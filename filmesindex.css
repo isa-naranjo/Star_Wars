@@ -107,7 +107,7 @@ nav{
     background-image: url(imagenes/original\ 1.png);
     background-size:cover;
     background-repeat: no-repeat;
-    margin: 100px
+    
 
 }
 
@@ -123,8 +123,8 @@ nav{
 
 
 .todo{
-    position: absolute;
-    left: 150px;
+    position: relative;
+    
     margin-top: 120px;
 }
 .Hans{
@@ -146,27 +146,31 @@ nav{
 
 }
 
-    .filmscontainer{
+    .carousel__contenedorfilmsl{
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         margin-top: 5%;
     }
 
 
-.trailers{
+.carousel__lista{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-top: -400px;
-    align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        width: 1000px;
+        height: 330px;
+        margin: 5px;
+        overflow: hidden;
+        scroll-behavior: smooth;
 
 }
 
-        .trailers input{
+        .carousel__lista input{
             display: flex;
             flex-direction: row;
         }
@@ -174,11 +178,11 @@ nav{
             display: none;
         }
 
-        .trailers iframe{
+        .carousel__lista iframe{
             border-radius: 5px;
         }
 
-        .trailers p{
+        .carousel__lista p{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
             letter-spacing: 5px;
@@ -186,7 +190,7 @@ nav{
             color: white;
         }
 
-        .trailers button{
+        .carousel__lista button{
             background: rgba(255, 255, 255, 0.3);
             color: white;
             border-radius: 5px;
@@ -196,7 +200,7 @@ nav{
             border: none;
         }
 
-        .trailers button:hover{
+        .carousel__lista button:hover{
             background: #7FEBFB;
             color: #00424B;
             transition: 0.2s;
@@ -318,23 +322,131 @@ nav{
 
             }
 
-            .trailers .controlizq{
-                position: absolute;
+             .trailer3{
+        position: relative;
+        right: 20px;
+        opacity: 70%;
+
+
+    }
+        .btntrailer3{
+            width: 380px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 10px;
+        }
+
+        .fav3{
+            position: fixed;
+            width: px;
+            top: 580px;
+            left: 1350px;
+
+        }
+
+        .fav3:hover{
+            transform: scale(1.15);
+            transition: 0.5s;
+        }
+
+            .heart3{
+                width: 25px;
+
+            }
+
+
+
+    
+            .trailer4{
+                position: relative;
+                right: 20px;
+                opacity: 70%;
+        
+        
+            }
+                .btntrailer4{
+                    width: 380px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 40px;
+                    margin-top: 10px;
+                }
+        
+                .fav4{
+                    position: fixed;
+                    width: px;
+                    top: 580px;
+                    left: 1350px;
+        
+                }
+        
+                .fav4:hover{
+                    transform: scale(1.15);
+                    transition: 0.5s;
+                }
+        
+                    .heart4{
+                        width: 25px;
+        
+                    }
+        
+                     .trailer4{
+                position: relative;
+                right: 20px;
+                opacity: 70%;
+        
+        
+            }
+                .btntrailer4{
+                    width: 380px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 40px;
+                    margin-top: 10px;
+                }
+        
+                .fav4{
+                    position: fixed;
+                    width: px;
+                    top: 580px;
+                    left: 1350px;
+        
+                }
+        
+                .fav4:hover{
+                    transform: scale(1.15);
+                    transition: 0.5s;
+                }
+        
+                    .heart4{
+                        width: 25px;
+        
+                    }
+        
+
+            .carousel__anterior{
+                
                 width: 40px;
                 height: 40px;
                 cursor: pointer;
                 object-fit: cover;
+                background: none;
                 left: 5%;
                 top: 60%;
                 transform: translate(0%, -50%);
             }
 
-            .trailers .controlder{
-                position: absolute;
+            .carousel__siguiente{
+                
                 width: 40px;
                 height: 40px;
                 cursor: pointer;
                 object-fit: cover;
+                background: none;
                 right: 5%;
                 top: 60%;
                 transform: translate(0%, -50%);

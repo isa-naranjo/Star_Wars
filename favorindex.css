@@ -130,29 +130,28 @@ nav{
 
 /*filmscontainer*/
 
-.filmscontainer{
+.carousel__contenedorfilms{
     position: relative;
     display: flex;
     flex-direction: row;
+
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
-    .sliderfilms{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    .carousel__listafilms{
         flex-direction: row;
         justify-content: center;
         align-items: center;
         background: none;
-        width: 1100px;
+        width: 800px;
         height: 500px;
         margin: 5px;
         overflow: hidden;
         scroll-behavior: smooth;
     }
 
-    .sliderfilms p{
+    .carousel__listafilms p{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         font-weight: lighter;
@@ -161,11 +160,11 @@ nav{
         margin-top: 15px;
     }
 
-    .sliderfilms div{
+    .carousel__listafilms div{
         margin: 15px;
     }
 
-    .sliderfilms div img:hover{
+    .carousel__listafilms div img:hover{
         transform: scale(1.10);
         transition: 0.5s;
     }
@@ -187,23 +186,114 @@ nav{
         }
 
 
-    .filmscontainer .controlizq{
+    .carousel__anterior{
         position: absolute;
         width: 40px;
         height: 40px;
         cursor: pointer;
         object-fit: cover;
+        background: none;
+        border: none;
         left: 1%;
         top: 50%;
         transform: translate(0%, -50%);
     }
 
-    .filmscontainer .controlder{
+    .carousel__siguiente{
         position: absolute;
         width: 40px;
         height: 40px;
         cursor: pointer;
         object-fit: cover;
+        background: none;
+        border: none;
+        right: 1%;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+
+
+    /*seriescontainer*/
+
+.carousel__contenedorseries{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    margin-top: 5%;
+}
+
+    .carousel__listaseries{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        width: 800px;
+        height: 500px;
+        margin: 5px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .carousel__listaseries p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+        color: white;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .carousel__listaseries div{
+        margin: 15px;
+        width: 10%;
+        
+    }
+
+    .carousel__listaseries div img:hover{
+        transform: scale(1.10);
+        transition: 0.5s;
+    }
+
+        .boba{
+            width: 100%;
+        }
+
+        .clone{
+            width: 100%;
+        }
+
+        .obi{
+            width: 100%;
+        }
+
+        .mando{
+            width: 100%;
+        }
+
+
+    .carousel__anterior2{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        object-fit: cover;
+        background: none;
+        border: none;
+        left: 1%;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+
+    .carousel__siguiente2{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        object-fit: cover;
+        background: none;
+        border: none;
         right: 1%;
         top: 50%;
         transform: translate(0%, -50%);

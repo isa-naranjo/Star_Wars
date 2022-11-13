@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
     <link rel="stylesheet" href="avatar.css"/>
     <title>Document</title>
 </head>
@@ -22,33 +23,39 @@
         <button type="button" class="buttonSave">Save Changes</button>
         <a class="later" href="profile.html"><h3>Later</h3></a>
 
+    <div class="carousel">
+        <div class="carousel__contenedor">
+            <button aria-label="anterior" class="carousel__anterior">
+                <img src="imagenes/prev.png">
+            </button>
+                <div class="carousel__lista">
+                    <div class="newhope"><img src="imagenes/Group 32.png" class="new"> <p>Episode IV:A New Hope</p>
+                    </div>
+                    <div class="rogueone">
+                        <img src="imagenes/Group 33.png" class="rogue">
+                        <p>Rogue One</p>
+                    </div>
+                    <div class="forceawake">
+                        <img src="imagenes/Group 34.png" class="force">
+                        <p>The Force Awakens</p>
+                    </div>
+                    <div class="lastjedi">
+                        <img src="imagenes/Group 35.png" class="jedi">
+                        <p>The Last Jedi</p>
+                    </div>
+                </div>
 
+             <button aria-label="siguiente" class="carousel__siguiente">
+                 <img src="imagenes/next.png">
+             </button>       
+        </div>
+    </div>
 
 
 
         
 
-        <div class="filmscontainer">
-            <img src="imagenes/flechaizq.png" class="controlizq">
-
-            <div class="sliderfilms">
-                <div class="newhope"><img src="imagenes/Group 32.png" class="new"> <p>Episode IV:A New Hope</p>
-                </div>
-                <div class="rogueone">
-                    <img src="imagenes/Group 33.png" class="rogue">
-                    <p>Rogue One</p>
-                </div>
-                <div class="forceawake">
-                    <img src="imagenes/Group 34.png" class="force">
-                    <p>The Force Awakens</p>
-                </div>
-                <div class="lastjedi">
-                    <img src="imagenes/Group 35.png" class="jedi">
-                    <p>The Last Jedi</p>
-                </div>
-            </div>
-            <img src="imagenes/flechader.png" class="controlder">
-        </div>
+        
 
         </div>
     </div>
@@ -82,6 +89,7 @@
             </button>
 </nav>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
 </body>
+    <script src="avatar.js"></script>
 </html>
