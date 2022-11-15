@@ -283,3 +283,9 @@ body {
     left: 1060px;
     z-index: 1;
 }
+
+.edit{
+    position: absolute;
+    top: 84%;
+    left: 56%;
+}

@@ -1,117 +1,9 @@
+@import "nav.css";
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-
-
-
-/*Barra de navegación*/
-nav{
-    position: sticky;
-    background:transparent;
-    height: 120px;
-    width: 100%;
-    overflow: hidden;
-    flex-direction: row;
-    z-index: 99;
-}
-
-.start{
-    position: fixed;
-    background-color: transparent;
-    border: none;
-    padding: 40px 45px;
-    cursor: pointer;
-    top: 0px;
-}
-
-    .deathstar{
-        height: 55px;
-    }
-
-
-.navbar{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    top: 20px;
-}
-
-.display{
-    position: fixed;
-    display: block;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    top: 20px;
-
-}
-
-    .displaybackground{
-        width: 85%;
-        margin: 0px 5px;
-    }
-
-        .textdisplay{
-            position: fixed;
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            float: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            top: 5px;
-        }
-
-        .textdisplay li{
-            display: inline-block;
-            line-height: 10px;
-            margin: 40px 5px;
-        }
-            .textdisplay li a{
-                color: white;
-                padding: 10px 30px;
-                border-radius: 3px;
-            }
-
-            li a.active, li a:hover{
-                background-color: rgb(83, 108, 129);
-                transition: 2s;
-                cursor: pointer;
-            }
-
-.signup{
-    position: fixed;
-    background-color: transparent;
-    border: none;
-    right: 40px;
-    top: 45px;
-    cursor: pointer;
-}
-
-.buttonssignup:hover{
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    transition: 0.2s;
-}
-
-
-    .login{
-        position: fixed;
-        right: 100px;
-        top: 55px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-    }
-    .log{height: 40px;
-    margin-top: -20px;}
-
-#check{
-    display: none;
-}
-
 
 body {
     background-image: url(imagenes/edit.png);
@@ -128,7 +20,7 @@ body {
 
 .centrado{
     position: absolute;
-    top: 100px;
+    top: 54px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
@@ -137,27 +29,27 @@ body {
 
 .Rectangle{
     position: absolute;
-    top: 200px;
+    top: 119px;
     left: 321px;
 }
 
 .avatar{
     position: absolute;
-    top: 210px;
+    top: 132px;
     left: 680px;;
 }
 
 .nombre{
     position: absolute;
-    top: 400px;
+    top: 291px;
     left: 690px;
     font-size: 20px;
 }
 
 .RectangleName{
     position: absolute;
-    top: 380px;
-    left: 680px;
+    top: 269px;
+    left: 672px;
     width: 30px;
     height: 30px;
 }
@@ -172,36 +64,26 @@ body {
 
 .line{
     position: absolute;
-    top:600px ;
+    top:402px ;
     left: 360px;
 }
 
 .choose{
     position: absolute;
-    top: 540px;
-    left: 380px;
+    top: 361px;
+    left: 382px;
     font-size: 18px;
     font-weight: lighter;
     letter-spacing: 5px;
 }
 
-.change{
-    position: absolute;
-    top: 470px;
-    left: 710px;
-    font-size: 12px;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    color: #7FEBFB;
-}
-
 .buttonSave {
     position:absolute;
-    top:900px;
+    top:955px;
     left: 40%;
     width: 20%;
-    height: 5%;
-    background-color:rgb(255, 255, 255);
+    height: 11%;
+    background-color:rgb(255, 255, 255 / 66%);
     color: #2c3435;
     border: 50px;
     border-radius: 5px;
@@ -218,10 +100,10 @@ body {
 
 .later{
     position: absolute;
-    top: 940px;
+    top: 989px;
     left:730px ;
     background: fixed;
-    color:aqua;
+    color:#00ff37;
     border: 50px;
     cursor: pointer;
     font-size: 14px;
@@ -233,8 +115,8 @@ body {
     position: relative;
     justify-content: center;
     margin-top: 3%;
-    top: 500px;
-    left:370px;
+    top: 450px;
+    left:340px;
 }
 
     .sliderfilms{
@@ -244,9 +126,9 @@ body {
         justify-content: center;
         align-items: center;
         background: none;
-        width: 50%;
-        height: 500px;
-        margin: 5px;
+        width: 40%;
+        height: 185px;
+        margin: 117px;
         overflow: hidden;
         scroll-behavior: smooth;
     }
@@ -292,7 +174,7 @@ body {
         height: 40px;
         cursor: pointer;
         object-fit: cover;
-        left: -2%;
+        left: 3%;
         top: 50%;
         transform: translate(0%, -50%);
     }
@@ -303,7 +185,101 @@ body {
         height: 40px;
         cursor: pointer;
         object-fit: cover;
-        right: 47%;
+        right: 48%;
         top: 50%;
         transform: translate(0%, -50%);
+    }
+
+
+    .texto-encima1{
+        position: absolute;
+        top: 122%;
+        left: 26%;
+        font-size: 14px;
+        font-weight: lighter;
+        letter-spacing: 5px;
+    }
+
+    .First{
+        margin: .4rem 0;
+        position: absolute;
+        top: 128%;
+        left: 26%;
+        height: 4%;
+        width: 20%;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .texto-encima2 {
+        position: absolute;
+        top: 122%;
+        left: 54%;
+        font-size: 14px;
+        font-weight: lighter;
+        letter-spacing: 5px;
+    }
+
+    .Last{
+        margin: .4rem 0;
+        position: absolute;
+        top: 128%;
+        left: 54%;
+        height: 4%;
+        width: 20%;
+        border-radius: 5px;
+        border-color: white;
+        background-color: transparent;
+        color: white;
+    }
+
+    .texto-encima3{
+        position: absolute;
+        top: 138%;
+        left: 26%;
+        font-size: 14px;
+        font-weight: lighter;
+        letter-spacing: 5px;
+    }
+
+    .Email{
+        margin: .4rem 0;
+        position: absolute;
+        top: 144%;
+        left: 26%;
+        height: 4%;
+        width: 20%;
+        border-radius: 5px;
+        border-color: white;
+        background-color: transparent;
+        color: white;
+    }
+
+    .texto-encima4 {
+        position: absolute;
+        top: 138%;
+        left: 54%;
+        font-size: 14px;
+        font-weight: lighter;
+        letter-spacing: 5px;
+    }
+
+    .password{
+        margin: .4rem 0;
+        position: absolute;
+        top: 144%;
+        left: 54%;
+        height: 4%;
+        width: 20%;
+        border-radius: 5px;
+        border-color: white;
+        background-color: transparent;
+        color: white;
+    }
+
+    ::placeholder{
+        color: white;
+        opacity:70%;
     }

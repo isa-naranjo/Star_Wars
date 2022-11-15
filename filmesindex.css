@@ -1,107 +1,8 @@
+@import "nav.css";
 *{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-
-
-nav{
-    position: sticky;
-    background:transparent;
-    height: 120px;
-    width: 100%;
-    overflow: hidden;
-    flex-direction: row;
-    z-index: 99;
-}
-
-.start{
-    position: fixed;
-    background-color: transparent;
-    border: none;
-    padding: 40px 45px;
-    cursor: pointer;
-    top: 0px;
-}
-
-    .deathstar{
-        height: 55px;
-    }
-
-
-.navbar{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    top: 20px;
-}
-
-.display{
-    position: fixed;
-    display: block;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    top: 20px;
-
-}
-
-    .displaybackground{
-        width: 85%;
-        margin: 0px 5px;
-    }
-
-        .textdisplay{
-            position: fixed;
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            float: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            top: 5px;
-        }
-
-        .textdisplay li{
-            display: inline-block;
-            line-height: 10px;
-            margin: 40px 5px;
-        }
-            .textdisplay li a{
-                color: white;
-                padding: 10px 30px;
-                border-radius: 3px;
-            }
-
-            li a.active, li a:hover{
-                background-color: rgb(83, 108, 129);
-                transition: 2s;
-                cursor: pointer;
-            }
-
-.signup{
-    position: fixed;
-    background-color: transparent;
-    border: none;
-    right: 40px;
-    top: 45px;
-    cursor: pointer;
-}
-    .login{
-        position: fixed;
-        right: 100px;
-        top: 55px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-    }
-    .log{height: 40px;
-    margin-top: -20px;}
-
-#check{
-    display: none;
-}
-
 
 .body{
     background-image: url(imagenes/original\ 1.png);
@@ -160,8 +61,8 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    margin-top: -400px;
+    width: 94%;
+    margin-top: -471vbpx;
     align-items: center;
 
 }
@@ -324,8 +225,8 @@ nav{
                 height: 40px;
                 cursor: pointer;
                 object-fit: cover;
-                left: 5%;
-                top: 60%;
+                left: -2%;
+                top: 61%;
                 transform: translate(0%, -50%);
             }
 
@@ -335,8 +236,8 @@ nav{
                 height: 40px;
                 cursor: pointer;
                 object-fit: cover;
-                right: 5%;
-                top: 60%;
+                right: 4%;
+                top: 61%;
                 transform: translate(0%, -50%);
             }
 
