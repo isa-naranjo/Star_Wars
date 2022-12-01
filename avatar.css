@@ -111,7 +111,7 @@ body {
 }
 
 
-.filmscontainer{
+.carousel__contenedor{
     position: relative;
     justify-content: center;
     margin-top: 3%;
@@ -119,21 +119,19 @@ body {
     left:340px;
 }
 
-    .sliderfilms{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    .carousel__lista{
         flex-direction: row;
         justify-content: center;
         align-items: center;
         background: none;
-        width: 40%;
-        height: 185px;
-        margin: 117px;
+        width: 650px;
+        height: 500px;
+        margin: 5px;
         overflow: hidden;
         scroll-behavior: smooth;
     }
 
-    .sliderfilms p{
+    .carousel__lista p{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         font-weight: lighter;
@@ -142,11 +140,11 @@ body {
         margin-top: 15px;
     }
 
-    .sliderfilms div{
+    .carousel__lista div{
         margin: 15px;
     }
 
-    .sliderfilms div img:hover{
+    .carousel__lista div img:hover{
         transform: scale(1.10);
         transition: 0.5s;
     }
@@ -168,24 +166,28 @@ body {
         }
 
 
-    .filmscontainer .controlizq{
+    .carousel__anterior{
         position: absolute;
         width: 40px;
         height: 40px;
         cursor: pointer;
         object-fit: cover;
-        left: 3%;
+        background: none;
+        border: none;
+        left: -2%;
         top: 50%;
         transform: translate(0%, -50%);
     }
 
-    .filmscontainer .controlder{
+    .carousel__siguiente{
         position: absolute;
         width: 40px;
         height: 40px;
         cursor: pointer;
         object-fit: cover;
-        right: 48%;
+        background: none;
+        border: none;
+        right: 47%;
         top: 50%;
         transform: translate(0%, -50%);
     }

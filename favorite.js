@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
-    new Glider(document.querySelector('.carousel__lista'),{
-    slidesToShow: 4,
+    new Glider(document.querySelector('.carousel__listafilms'),{
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: '.dots',
     arrows: {
@@ -10,9 +10,10 @@ window.addEventListener('load', function(){
     } )
 });
 
+
 window.addEventListener('load', function(){
-    new Glider(document.querySelector('.carousel__lista2'),{
-    slidesToShow: 4,
+    new Glider(document.querySelector('.carousel__listaseries'),{
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: '.dots',
     arrows: {

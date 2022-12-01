@@ -236,7 +236,7 @@ nav{
     font-size: 50PX;
 }
 
-.jediscontainer{
+.carousel__contenedor{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -244,24 +244,21 @@ nav{
     margin-top: 5%;
 }
 
-.slider{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    background: none;
-    width: 1642px;
-    height: 237px;
-    margin: 7px;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    align-content: stretch;
-    justify-items: center;
-}
+    .carousel__lista{
 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        width: 800px;
+        height: 230px;
+        margin: 5px;
+        overflow: hidden;
+        scroll-behavior: smooth;
 
-    .slider p{
+    }
+
+    .carousel__lista p{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: lighter;
         font-size: 14px;
@@ -270,11 +267,14 @@ nav{
         margin-bottom: 15px;
     }
 
-      .slider div{
-        margin: 15px;
+      .carousel__lista div{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 50px;
+        cursor: pointer;
       }
 
-      .slider div img:hover{
+      .carousel__lista div img:hover{
         transform: scale(1.10);
         transition: 0.5s;
       }
@@ -313,10 +313,11 @@ nav{
             }
 
 
-    .jediscontainer .controlprev{
+    .carousel__anterior{
         position: absolute;
         width: 40px;
         height: 40px;
+        background: none;
         cursor: pointer;
         object-fit: cover;
         left: 15%;
@@ -324,10 +325,11 @@ nav{
         transform: translate(-70%, -50%);
     }
 
-    .jediscontainer .controlnext{
+    .carousel__siguiente{
         position: absolute;
         width: 40px;
         height: 40px;
+        background: none;
         cursor: pointer;
         object-fit: cover;
         right: 15%;
@@ -350,7 +352,7 @@ nav{
         font-size: 25px;
     }
 
-.sithcontainer{
+.carousel__contenedor2{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -358,9 +360,8 @@ nav{
     margin-top: 5%;
 }
 
-    .slider2{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    .carousel__lista2{
+
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -372,7 +373,7 @@ nav{
         scroll-behavior: smooth;
     }
 
-    .slider2 p{
+    .carousel__lista2 p{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: lighter;
         font-size: 14px;
@@ -381,13 +382,16 @@ nav{
         margin-bottom: 15px;
     }
 
-      .slider2 div{
-        margin: 15px;
+      .carousel__lista2 div{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 50px;
+        cursor: pointer;
 
       }
 
 
-      .slider2 div img:hover{
+      .carousel__lista2 div img:hover{
         transform: scale(1.10);
         transition: 0.5s;
       }
@@ -418,10 +422,11 @@ nav{
            }
 
 
-    .sithcontainer .controlprev2{
+    .carousel__anterior2{
         position: absolute;
         width: 40px;
         height: 40px;
+        background: none;
         cursor: pointer;
         object-fit: cover;
         left: 15%;
@@ -429,10 +434,11 @@ nav{
         transform: translate(-70%, -50%);
     }
 
-    .sithcontainer .controlnext2{
+    .carousel__siguiente2{
         position: absolute;
         width: 40px;
         height: 40px;
+        background: none;
         cursor: pointer;
         object-fit: cover;
         right: 15%;
