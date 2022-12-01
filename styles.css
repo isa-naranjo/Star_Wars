@@ -225,17 +225,16 @@ nav{
     }
 
 /*Jedis section*/
-
-    .titlejedis{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 1150px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        letter-spacing: 20px;
-        font-size: 25px;
-    }
+.titlejedis{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1238px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 20px;
+    font-size: 50PX;
+}
 
 .jediscontainer{
     position: relative;
@@ -245,19 +244,22 @@ nav{
     margin-top: 5%;
 }
 
-    .slider{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: none;
-        width: 800px;
-        height: 230px;
-        margin: 5px;
-        overflow: hidden;
-        scroll-behavior: smooth;
-    }
+.slider{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    background: none;
+    width: 1642px;
+    height: 237px;
+    margin: 7px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    align-content: stretch;
+    justify-items: center;
+}
+
 
     .slider p{
         font-family: Arial, Helvetica, sans-serif;
