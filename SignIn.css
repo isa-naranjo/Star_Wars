@@ -141,7 +141,7 @@ body {
 .Email{
     margin: .4rem 0;
     position: absolute;
-    top: 32%;
+    top: 25%;
     left: 35%;
     height: 4%;
     width: 420px;
@@ -169,7 +169,7 @@ body {
 .password{
     margin: .4rem 0;
     position: absolute;
-    top: 46%;
+    top: 38%;
     left: 35%;
     height: 4%;
     border-radius: 5px;

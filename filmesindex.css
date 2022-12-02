@@ -35,16 +35,16 @@
 
 }
 
+
 .rect{
     position: relative;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     align-items: center;
     width: 1300px;
-    right: 40px;
-
+    right: -133px;
+    top:20%;
 }
 
     .carousel__contenedorfilmsl{
@@ -53,28 +53,47 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 5%;
     }
-
 
 .carousel__lista{
 
-flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: none;
-        width: 1000px;
-        height: 330px;
-        margin: 5px;
-        overflow: hidden;
-        scroll-behavior: smooth;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 959px;
+    height: 332px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-top: -497px;
+    left: -3%;
+}
+
+.carousel__anterior{
+    position: relative;
+    width: 64px;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    background: none;
+    left: 20%;
+    top: 10000%;
+    transform: translate(0%, -50%);
 
 }
 
-        .carousel__lista input{
-            display: flex;
-            flex-direction: row;
-        }
+.carousel__siguiente{
+    position: relative;
+    width: 64px;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    background: none;
+    right:5%;
+    top:60%;
+    transform: translate(0%, -50%);
+}
+
         #fav{
             display: none;
         }
@@ -143,7 +162,7 @@ flex-direction: row;
     }
 
     .trailers input img{
-        position: sticky;
+        position: relative;
         top: 10px;
         width: 10px;
     }
@@ -294,12 +313,10 @@ flex-direction: row;
 
                     }
 
-                     .trailer4{
+                .trailer4{
                 position: relative;
                 right: 20px;
                 opacity: 70%;
-
-
             }
                 .btntrailer4{
                     width: 380px;
@@ -329,27 +346,4 @@ flex-direction: row;
                     }
 
 
-            .carousel__anterior{
-
-                width: 40px;
-                height: 40px;
-                cursor: pointer;
-                object-fit: cover;
-                background: none;
-                left: 5%;
-                top: 60%;
-                transform: translate(0%, -50%);
-            }
-
-            .carousel__siguiente{
-
-                width: 40px;
-                height: 40px;
-                cursor: pointer;
-                object-fit: cover;
-                background: none;
-                right:5%;
-                top:60%;
-                transform: translate(0%, -50%);
-            }
 

@@ -1,69 +1,30 @@
-const storage = window.localStorage
-let userList=[];
+const storage=window.localStorage
 
-function loadUsers(){
-    let loadedUsers = localStorage.getItem("user");
-    if(loadedUsers !==null){
-        userList = JSON.parse(loadedUsers);
+let user=[]
+let loadedUsers = localStorage.getItem("user");
+    if (loadedUsers !== null) {
+        user = JSON.parse(loadedUsers);
     };
-}
+console.log("usero")
+function signup(){
 
-loadUsers();
-function saveUsers(){
-    let json= JSON.stringify(userList);
-    localStorage.setItem("user", json);
-}
+    console.log("pala")
+    const first=document.getElementById("first").value
+    const last=document.getElementById("last").value
+    const email=document.getElementById("email").value
+    const password=document.getElementById("password").value
+  
+const user={
+        first : first,
+        last : last,
+        email : email,
+        password: password
+    }
+    const userJsonStr= JSON.stringify(user)
+    storage.setItem("user", userJsonStr)
 
-function validateEmail(email){
-    if (email =="") {
-        alert("The email section cannot be empty, please fill it");
-        return true;
-    }
-    for (let index = 0; index < userList.length; index++){
-        if (userList[index].email == email){
-            return false;
-        }
-    }
-    alert("The email is incorrect, please try again");
-    return true;
+    window.location.href= './starwars.html'
+  console.log("palabra")
 }
-
-function validatePassword(password, email){
-    if (password =="") {
-        alert("The password cannot be left empty, please fill it");
-        return true;
-    }
-    for (let index = 0; index<userList.length; index++){
-        if (userList[index].email == email){
-            if (userList[index].password == password){
-            return false;
-            }
-        }
-    }
-    alert("The password section cannot be left empty, please fill it");
-    return true;
-}
-function updateUser(email){
-    for(let index = 0; index < userList.length; index++){
-        if (userList[index].email==email){
-            userList[index].isLogged= true;
-        }
-    }
-    saveUsers();
-}
-
-function login(){
-    const email= document.getElementById("email").value
-    const password = document.getElementById("password").value
-
-    if (validateEmail(email)){
-        return;
-    } else if(validatePassword(password, email)){
-        return;
-    } else{
-        updateUser(email);
-        window.location.href = 'Registration.html'
-    }
-    //navego a la main page
-}
+console.log("pal")
 

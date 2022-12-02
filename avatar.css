@@ -20,12 +20,13 @@ body {
 
 .centrado{
     position: absolute;
-    top: 54px;
+    top: 222px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
     letter-spacing: 20px;
 }
+
 
 .Rectangle{
     position: absolute;
@@ -80,7 +81,7 @@ body {
 .buttonSave {
     position:absolute;
     top: 1160px;
-    left: 41%;
+    left: 44%;
     width: 20%;
     height: 4%;
     color: #2c3435;
@@ -101,7 +102,7 @@ body {
 .later{
     position: absolute;
     top: 1110px;
-    left: 838px;
+    left: 810px;
     background: fixed;
     color:#00ff37;
     border: 50px;
@@ -196,7 +197,7 @@ body {
     .texto-encima1{
         position: absolute;
         top: 900px;
-        left: 26%;
+        left: 29%;
         font-size: 14px;
         font-weight: lighter;
         letter-spacing: 5px;
@@ -205,8 +206,8 @@ body {
     .First{
         margin: .4rem 0;
         position: absolute;
-        top: 940px;
-        left: 26%;
+        top: 944px;
+        left: 29%;
         height: 4%;
         width: 20%;
         background-color: transparent;
@@ -239,8 +240,8 @@ body {
 
     .texto-encima3{
         position: absolute;
-        top: 960px;
-        left: 26%;
+        top: 990px;
+        left: 29%;
         font-size: 14px;
         font-weight: lighter;
         letter-spacing: 5px;
@@ -249,8 +250,8 @@ body {
     .Email{
         margin: .4rem 0;
         position: absolute;
-        top: 1000px;
-        left: 26%;
+        top: 1030px;
+        left: 29%;
         height: 4%;
         width: 20%;
         border-radius: 5px;
@@ -261,7 +262,7 @@ body {
 
     .texto-encima4 {
         position: absolute;
-        top: 960px;
+        top: 990px;
         left: 54%;
         font-size: 14px;
         font-weight: lighter;
@@ -271,7 +272,7 @@ body {
     .password{
         margin: .4rem 0;
         position: absolute;
-        top: 1000px;
+        top: 1030px;
         left: 54%;
         height: 4%;
         width: 20%;

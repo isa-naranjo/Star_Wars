@@ -20,20 +20,20 @@
             <a class="buttonLog" href="SignIn.html">Log in</a>
 
             <div class="texto-encima1"><h3>First Name</h3></div>
-            <input type="text" class="First" name="First Name" placeholder="Ex: Valentina" size="40">
+            <input type="text" class="First" name="First Name" id="first" placeholder="Ex: Valentina" size="40">
 
             <div class="texto-encima2"><h3>Last Name</h3></div>
-            <input type="text" class="Last" name="Last Name" placeholder="Ex: Arango Tenorio" size="40">
+            <input type="text" class="Last" name="Last Name" id="last" placeholder="Ex: Arango Tenorio" size="40">
 
             <div class="texto-encima3"><h3>Email</h3></div>
-            <input type="email" class="Email" name="Email" placeholder="Enter your email" size="40">
+            <input type="email" class="Email" name="Email" id="email" placeholder="Enter your email" size="40">
 
             <div class="texto-encima4"><h3>Password</h3></div>
-            <input type="password" class="password" id="input" placeholder="*********" size="40">
+            <input type="password" class="password" id="password" placeholder="*********" size="40">
 
-            <button type="button" class="buttonCreate">Create account</button>
+            <button type="button" class="buttonCreate" onclick="signup()" id="userList" href="starwars.html">Create account</button>
 
-            <a class="avatar" href="SignIn.html">Choose an avatar</a>
+            <a class="avatar" href="avatar.html">Choose an avatar</a>
         </div>
     </div>
 
@@ -61,10 +61,10 @@
 
                 </div>
                 <button class="signup">
-                    <li><a class="login" href="SignIn.html">Sign Ip</a></li>
+                    <li><a class="login" href="SignIn.html">Sign In</a></li>
                     <img src="imagenes/log.png" alt="logimg" class="log">
                 </button>
     </nav>
-
+<script src="signup.js"></script>
 </body>
 </html>

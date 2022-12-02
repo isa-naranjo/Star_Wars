@@ -119,13 +119,12 @@ nav{
 }
 .rect{
     position: absolute;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     width: 1220px;
     height: 500px;
-
+    left: 14%;
 }
 
 /*filmscontainer*/
@@ -193,8 +192,8 @@ nav{
         object-fit: cover;
         background: none;
         border: none;
-        left: 1%;
-        top: 50%;
+        left: 13%;
+        top: 40%;
         transform: translate(0%, -50%);
     }
 
@@ -206,8 +205,8 @@ nav{
         object-fit: cover;
         background: none;
         border: none;
-        right: 1%;
-        top: 50%;
+        right: 15%;
+        top: 40%;
         transform: translate(0%, -50%);
     }
 
@@ -247,7 +246,7 @@ nav{
     .carousel__listaseries div{
         margin: 15px;
         width: 10%;
-        
+
     }
 
     .carousel__listaseries div img:hover{
@@ -280,7 +279,7 @@ nav{
         object-fit: cover;
         background: none;
         border: none;
-        left: 1%;
+        left: 14%;
         top: 50%;
         transform: translate(0%, -50%);
     }
@@ -293,7 +292,7 @@ nav{
         object-fit: cover;
         background: none;
         border: none;
-        right: 1%;
+        right: 15%;
         top: 50%;
         transform: translate(0%, -50%);
     }
