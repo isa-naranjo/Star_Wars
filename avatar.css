@@ -29,27 +29,27 @@ body {
 
 .Rectangle{
     position: absolute;
-    top: 119px;
-    left: 321px;
+    top: 288px;
+    left: 405px;
 }
 
 .avatar{
     position: absolute;
-    top: 132px;
-    left: 680px;;
+    top: 309px;
+    left: 771px;
 }
 
 .nombre{
     position: absolute;
-    top: 291px;
-    left: 690px;
+    top: 464px;
+    left: 779px;
     font-size: 20px;
 }
 
 .RectangleName{
     position: absolute;
-    top: 269px;
-    left: 672px;
+    top: 439px;
+    left: 756px;
     width: 30px;
     height: 30px;
 }
@@ -64,14 +64,14 @@ body {
 
 .line{
     position: absolute;
-    top:402px ;
-    left: 360px;
+    top: 613px;
+    left: 448px;
 }
 
 .choose{
     position: absolute;
-    top: 361px;
-    left: 382px;
+    top: 564px;
+    left: 454px;
     font-size: 18px;
     font-weight: lighter;
     letter-spacing: 5px;
@@ -79,16 +79,16 @@ body {
 
 .buttonSave {
     position:absolute;
-    top:955px;
-    left: 40%;
+    top: 1160px;
+    left: 41%;
     width: 20%;
-    height: 11%;
-    background-color:rgb(255, 255, 255 / 66%);
+    height: 4%;
     color: #2c3435;
     border: 50px;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
     .buttonSave:hover{
@@ -100,8 +100,8 @@ body {
 
 .later{
     position: absolute;
-    top: 989px;
-    left:730px ;
+    top: 1110px;
+    left: 838px;
     background: fixed;
     color:#00ff37;
     border: 50px;
@@ -114,9 +114,9 @@ body {
 .carousel__contenedor{
     position: relative;
     justify-content: center;
-    margin-top: 3%;
-    top: 450px;
-    left:340px;
+    margin-top: 11%;
+    top: 445px;
+    left: 464px;
 }
 
     .carousel__lista{
@@ -124,9 +124,9 @@ body {
         justify-content: center;
         align-items: center;
         background: none;
-        width: 650px;
-        height: 500px;
-        margin: 5px;
+        width: 677px;
+        height: 495px;
+        margin: 24px;
         overflow: hidden;
         scroll-behavior: smooth;
     }
@@ -168,34 +168,34 @@ body {
 
     .carousel__anterior{
         position: absolute;
-        width: 40px;
-        height: 40px;
+        width: 46px;
+        height: 82px;
         cursor: pointer;
         object-fit: cover;
         background: none;
         border: none;
         left: -2%;
-        top: 50%;
+        top: 27%;
         transform: translate(0%, -50%);
     }
 
     .carousel__siguiente{
         position: absolute;
-        width: 40px;
+        width: 18px;
         height: 40px;
         cursor: pointer;
         object-fit: cover;
         background: none;
         border: none;
-        right: 47%;
-        top: 50%;
+        right: 56%;
+        top: 27%;
         transform: translate(0%, -50%);
     }
 
 
     .texto-encima1{
         position: absolute;
-        top: 122%;
+        top: 900px;
         left: 26%;
         font-size: 14px;
         font-weight: lighter;
@@ -205,7 +205,7 @@ body {
     .First{
         margin: .4rem 0;
         position: absolute;
-        top: 128%;
+        top: 940px;
         left: 26%;
         height: 4%;
         width: 20%;
@@ -217,7 +217,7 @@ body {
 
     .texto-encima2 {
         position: absolute;
-        top: 122%;
+        top: 900px;
         left: 54%;
         font-size: 14px;
         font-weight: lighter;
@@ -227,7 +227,7 @@ body {
     .Last{
         margin: .4rem 0;
         position: absolute;
-        top: 128%;
+        top: 940px;
         left: 54%;
         height: 4%;
         width: 20%;
@@ -239,7 +239,7 @@ body {
 
     .texto-encima3{
         position: absolute;
-        top: 138%;
+        top: 960px;
         left: 26%;
         font-size: 14px;
         font-weight: lighter;
@@ -249,7 +249,7 @@ body {
     .Email{
         margin: .4rem 0;
         position: absolute;
-        top: 144%;
+        top: 1000px;
         left: 26%;
         height: 4%;
         width: 20%;
@@ -261,7 +261,7 @@ body {
 
     .texto-encima4 {
         position: absolute;
-        top: 138%;
+        top: 960px;
         left: 54%;
         font-size: 14px;
         font-weight: lighter;
@@ -271,7 +271,7 @@ body {
     .password{
         margin: .4rem 0;
         position: absolute;
-        top: 144%;
+        top: 1000px;
         left: 54%;
         height: 4%;
         width: 20%;

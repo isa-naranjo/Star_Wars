@@ -59,7 +59,7 @@
 
 .carousel__lista{
 
-        flex-direction: row;
+flex-direction: row;
         justify-content: center;
         align-items: center;
         background: none;
