@@ -1,42 +1,3 @@
-const storage=window.localStorage
-
-let user=[]
-let loadedUsers = localStorage.getItem("user");
-    if (loadedUsers !== null) {
-        user = JSON.parse(loadedUsers);
-    };
-console.log("usero")
-function login(){
-    const loggedUser = storage.getItem("user")
-    console.log("pala")
-    const email=document.getElementById("email").value
-    const password=document.getElementById("password").value
-  
-    if(user.email === email && user.password === password){
-        user.isLogged = true
-        const userJsonStr = JSON.stringify(user)
-        storage.setItem("user", userJsonStr)
-
-        window.location.href = 'main.html'
-    }
-//const user={
-//        name : name,
-  //      email : email,
-    //    password: password
-    //}
-    //const userJsonStr= JSON.stringify(user)
-    //storage.setItem("user", userJsonStr)
-
-  //  window.location.href= 'login.html'
-  console.log("palabra")
-}
-console.log("pal")
-
-
-
-
-
-
 let userList=[];
 
 function loadUsers(){
@@ -45,6 +6,19 @@ function loadUsers(){
         userList = JSON.parse(loadedUsers);
     };
 }
+
+const email = document.getElementById('email')
+const password = document.getElementById('password')
+const button = document.getElementById('button')
+button.addEventListener('click', (e) =>{
+    e.preventDefault()
+    const data = {
+        email: email.value,
+        password: password.value
+    }
+    console.log(data)
+    
+})
 
 loadUsers();
 function saveUsers(){
@@ -62,7 +36,7 @@ function validateEmail(email){
             return false;
         }
     }
-    alert("The email is incorrect, please try again");
+    alert("You have entered correctly, please go back to the main page");
     return true;
 }
 
@@ -78,9 +52,11 @@ function validatePassword(password, email){
             }
         }
     }
-    alert("The password section cannot be left empty, please fill it");
+    //alert("The password section cannot be left empty, please fill it");
     return true;
+    
 }
+
 function updateUser(email){
     for(let index = 0; index < userList.length; index++){
         if (userList[index].email==email){
@@ -88,6 +64,7 @@ function updateUser(email){
         }
     }
     saveUsers();
+    window.location.href = 'starwars.html'
 }
 
 function login(){
@@ -95,12 +72,14 @@ function login(){
     const password = document.getElementById("password").value
 
     if (validateEmail(email)){
+        window.location.href = 'starwars.html'
         return;
     } else if(validatePassword(password, email)){
+        //window.location.href = 'starwars.html'
         return;
     } else{
         updateUser(email);
-        window.location.href = 'Registration.html'
+        window.location.href = 'starwars.html'
     }
     //navego a la main page
     console.log("cons")

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+    <title>Welcome to the jungle</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet2" href="styles2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+
 </head>
 <body>
 
@@ -30,7 +32,7 @@
 
     </section>
 
-    /*---Jedis----*/
+    /---Jedis----/
 
 
     <h3 class="titlejedis">JEDIS</h3>
@@ -43,57 +45,91 @@
                 </button>
 
                 <div class="carousel__lista">
-                    <div class="quaigonjinn">
-                        <p>Quai Gon Jinn</p>
-                        <img src="imagenes/gonjinn.png" class="jinn">
-                    </div>
-                    <div class="yodita">
-                        <p>Master Yoda</p>
-                        <a href="yoda.html" class="yodaa">
-                            <img src="imagenes/yodita.png" class="yoda"> </a>
-                    </div>
-                    <div class="Obi Wan Kenobi">
-                        <p>Obi Wan Kenobi</p>
-                        <img src="imagenes/obiwan.png" class="wan">
-                    </div>
-                    <div class="macewindu">
-                        <p>Mace Windu</p>
-                        <img src="imagenes/windu.png" class="windu">
-                    </div>
-                    <div class="anakinskeywalker">
-                        <p>Anakin Skywalker</p>
-                        <img src="imagenes/anakin.png" class="anakin">
-                    </div>
-                    <div class="reyskeywalker">
-                        <p>Rey Skywalker</p>
-                        <img src="imagenes/rey.png" class="rey">
-                    </div>
-                    <div class="ahsokatano">
-                        <p>Ahsoka Tano</p>
-                        <img src="imagenes/ahsoka.png" class="ahsoka">
-                    </div>
-                    <div class="lukeskywalker">
-                        <p>Luke Skywalker</p>
-                        <img src="imagenes/luke.png" class="luke">
-                    </div>
+
+                    <button class="id1" onclick="buttonClicked(0)" style="display:contents;">
+                        <div class="quaigonjinn">
+                            <p>Quai Gon Jinn</p>
+                            <img src="imagenes/gonjinn.png" class="jinn">
+                        </div>
+                    </button>
+
+
+                    <button class="id2" onclick="buttonClicked(1)" style="display:contents;">
+                        <div  class="yodita">
+                            <p>Master Yoda</p>
+                                <img src="imagenes/yodita.png" class="yoda"> </a>
+                        </div>
+                    </button>
+
+                    <button class="id3" onclick="buttonClicked(2)" style="display:contents;">
+                        <div class="Obi Wan Kenobi">
+                            <p>Obi Wan Kenobi</p>
+                                <img src="imagenes/obiwan.png" class="wan">
+                            </a>
+                        </div>
+                    </button>
+
+
+                    <button class="id4" onclick="buttonClicked(3)" style="display:contents;">
+                        <div class="macewindu">
+                            <p>Mace Windu</p>
+                            <div id=""></div>
+                            <script src="person.js"></script>
+                            <img src="imagenes/windu.png" class="windu">
+                        </div>
+                    </button>
+
+
+                    <button class="id5" onclick="buttonClicked(4)" style="display:contents;">
+                        <div class="anakinskeywalker">
+                            <p>Anakin Skywalker</p>
+                            <img src="imagenes/anakin.png" class="anakin">
+                        </div>
+                    </button>
+
+
+
+                    <button class="id6" onclick="buttonClicked(5)" style="display:contents;">
+                        <div class="reyskeywalker">
+                            <p>Rey Skywalker</p>
+                            <img src="imagenes/rey.png" class="rey">
+                        </div>
+                    </button>
+
+
+
+                    <button class="id7" onclick="buttonClicked(6)" style="display:contents;">
+                        <div class="ahsokatano">
+                            <p>Ahsoka Tano</p>
+                            <img src="imagenes/ahsoka.png" class="ahsoka">
+                        </div>
+                    </button>
+
+
+                    <button class="id8" onclick="buttonClicked(7)" style="display:contents;">
+                        <div class="lukeskywalker">
+                            <p>Luke Skywalker</p>
+                            <img src="imagenes/luke.png" class="luke">
+                        </div>
+                    </button>
                 </div>
 
                 <button aria-label="siguiente" class="carousel__siguiente">
                     <img src="imagenes/next.png">
                 </button>
             </div>
-      
+
         </div>
-    
+
 
     </section>
 
 
-    /*Sith*/
+    /Sith/
 
     <h3 class="titlesith">SITH</h3>
     <div class="sithcontainer">
-       
+
         <div class="carousel2">
             <div class="carousel__contenedor2">
                 <button aria-label="anterior" class="carousel__anterior2">
@@ -101,43 +137,61 @@
                 </button>
 
                 <div class="carousel__lista2">
-                    <div class="darthmaul">
-                        <p>Darth Maul</p>
-                        <img src="imagenes/darthmaul.png" class="maul">
-                    </div>
-                    <div class="sheevpalpatine">
-                        <p>Palpatine</p>
-                        <img src="imagenes/paladin.png" class="palpatine">
-                    </div>
-                    <div class="darthvader">
-                        <p>Darth Vader</p>
-                        <img src="imagenes/vader.png" class="vader1">
-                    </div>
-                    <div class="countdooku">
-                        <p>Count Dooku</p>
-                        <img src="imagenes/dooku.png" class="dooku1">
-                    </div>
-                    <div class="darthbane">
-                        <p>Count Dooku</p>
-                        <img src="imagenes/darthbane.png" class="bane">
-                    </div>
-                    <div class="darthplagueis">
-                        <p>Count Dooku</p>
-                        <img src="imagenes/darthplagueis.png" class="plagueis">
-                    </div>
+
+                    <button class="id9" onclick="buttonClicked(8)" style="display:contents;">
+                        <div class="darthmaul">
+                            <p>Darth Maul</p>
+                            <img src="imagenes/darthmaul.png" class="maul">
+                        </div>
+                    </button>
+
+
+                    <button class="id10" onclick="buttonClicked(9)" style="display:contents;">
+                        <div class="sheevpalpatine">
+                            <p>Palpatine</p>
+                            <img src="imagenes/paladin.png" class="palpatine">
+                        </div>
+                    </button>
+
+
+                    <button class="id11" onclick="buttonClicked(10)" style="display:contents;">
+                        <div class="darthvader">
+                            <p>Darth Vader</p>
+                            <img src="imagenes/vader.png" class="vader1">
+                        </div>
+                    </button>
+
+
+                    <button class="id12" onclick="buttonClicked(11)" style="display:contents;">
+                        <div class="countdooku">
+                            <p>Count Dooku</p>
+                            <img src="imagenes/dooku.png" class="dooku1">
+                        </div>
+
+                    </button>
+
+                    <button class="id13" onclick="buttonClicked(12)" style="display:contents;">
+                        <div class="darthbane">
+                            <p>Count Dooku</p>
+                            <img src="imagenes/darthbane.png" class="bane">
+                        </div>
+                    </button>
+
+
+                    <button class="id14" onclick="buttonClicked(13)" style="display:contents;">
+                        <div class="darthplagueis">
+                            <p>Count Dooku</p>
+                            <img src="imagenes/darthplagueis.png" class="plagueis">
+                        </div>
+                    </button>
                 </div>
 
                 <button aria-label="siguiente" class="carousel__siguiente2">
                     <img src="imagenes/next.png">
                 </button>
             </div>
-      
+
         </div>
-    
-
-
-
-
 
     <nav>
         <input type="checkbox" id="check">
@@ -168,7 +222,9 @@
     </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+    <script src="person.js"></script>
 </body>
     <script src="interaction.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="person.js"></script>
 </html>

@@ -1,30 +1,53 @@
 const storage=window.localStorage
 
-let user=[]
-let loadedUsers = localStorage.getItem("user");
-    if (loadedUsers !== null) {
-        user = JSON.parse(loadedUsers);
-    };
-console.log("usero")
-function signup(){
+const UserInput = document.getElementById('UserInput');
+const EmailInput = document.getElementById('EmailInput');
+const PasswordInput = document.getElementById('PasswordInput');
+const createBtn = document.getElementById('createBtn')
+const Storage = window.localStorage;
 
-    console.log("pala")
-    const first=document.getElementById("first").value
-    const last=document.getElementById("last").value
-    const email=document.getElementById("email").value
-    const password=document.getElementById("password").value
-  
-const user={
-        first : first,
-        last : last,
-        email : email,
-        password: password
-    }
-    const userJsonStr= JSON.stringify(user)
-    storage.setItem("user", userJsonStr)
-
-    window.location.href= './starwars.html'
-  console.log("palabra")
+let users = [];
+let savedUsers = localStorage.getItem('users')
+if (savedUsers !== null) {
+    users = JSON.parse(savedUsers);
 }
-console.log("pal")
 
+let userFavs = [];
+for(i = 0; i<162; i++){
+    userFavs.push(false);
+}
+
+function signup() {
+
+    if (PasswordInput.value.length <= 5) {
+        alert('The password needs at least 6 digits')
+        return;
+    }
+    let flag = false;
+    for (let i = 0; i < users.length; i++) {
+        if (EmailInput.value == users[i].email) {
+            flag = true;
+            alert("This mail is already been used");
+        }
+    }
+    if (flag == false) {
+        let user = new UserC(
+            UserInput.value,
+            EmailInput.value,
+            PasswordInput.value,
+            users.length,
+            false,
+            userFavs,
+            0
+        );
+        users.push(user);
+        let json = JSON.stringify(users);
+        localStorage.setItem('users', json);
+        window.location.href = "login.html";
+    }
+
+}
+
+
+
+createBtn.addEventListener('click', signup)

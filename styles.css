@@ -267,10 +267,10 @@ nav{
         margin-bottom: 15px;
     }
 
-      .carousel__lista div{
-        margin-right: 10px;
+    .carousel__lista div{
+        margin-right: -5px;
         margin-left: 10px;
-        width: 50px;
+        width: 202px;
         cursor: pointer;
       }
 
@@ -285,7 +285,7 @@ nav{
             }
 
             .yoda{
-                width: 100%;
+                width: 100%
             }
 
             .wan{
@@ -338,7 +338,6 @@ nav{
 
     }
 
-
     /*Sith*/
 
     .titlesith{
@@ -385,7 +384,7 @@ nav{
       .carousel__lista2 div{
         margin-right: 10px;
         margin-left: 10px;
-        width: 50px;
+        width: 176px;
         cursor: pointer;
 
       }

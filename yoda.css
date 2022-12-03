@@ -131,9 +131,10 @@ body {
 
 .Rectangle{
     position: absolute;
-    top: 150px;
+    top: 48px;
     left: 15%;
 }
+
 .texto-encima1{
     position: absolute;
     top: 170px;
@@ -202,4 +203,62 @@ body {
     position: absolute;
     top: 90px;
     right: 70px;
+}
+
+
+
+.person{
+    position: absolute;
+    top: 178px;
+    left: 23%;
+}
+
+.name{
+    position: absolute;
+    top: 181px;
+    left: 25%;
+    height: 20%;
+}
+
+.height{
+    position: absolute;
+    top: 242px;
+    left: 23%;
+    height: 20%;
+}
+
+
+.mass{
+    position: absolute;
+    top: 355px;
+    left: 23%;
+    height: 20%;
+}
+
+.hair_color{
+    position: absolute;
+    top: 475px;
+    left: 23%;
+    height: 20%;
+}
+
+.skin_color{
+    position: absolute;
+    top: 598px;
+    left: 23%;
+    height: 20%;
+}
+
+.eye_color{
+    position: absolute;
+    top: 709px;
+    left: 23%;
+    height: 20%;
+}
+
+.img{
+    position: absolute;
+    top: 407px;
+    left: 65%;
+    height: 20%;
 }
