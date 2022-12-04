@@ -1,0 +1,322 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+nav {
+    position: sticky;
+    background: transparent;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    z-index: 99;
+}
+
+.start {
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    padding: 40px 45px;
+    cursor: pointer;
+    top: 0px;
+}
+
+.deathstar {
+    height: 55px;
+}
+
+
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    top: 20px;
+}
+
+.display {
+    position: fixed;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    top: 20px;
+
+}
+
+.displaybackground {
+    width: 85%;
+    margin: 0px 5px;
+}
+
+.textdisplay {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    float: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    top: 5px;
+}
+
+.textdisplay li {
+    display: inline-block;
+    line-height: 10px;
+    margin: 40px 5px;
+}
+
+.textdisplay li a {
+    color: white;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+li a.active,
+li a:hover {
+    background-color: rgb(83, 108, 129);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.signup {
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    right: 40px;
+    top: 45px;
+    cursor: pointer;
+}
+
+.login {
+    position: fixed;
+    right: 100px;
+    top: 55px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.log {
+    height: 40px;
+    margin-top: -20px;
+}
+
+#check {
+    display: none;
+}
+
+.body {
+    background-image: url(imagenes/new.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 100px
+}
+
+.title {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rect {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 1500px;
+    height: 500px;
+
+}
+
+/*filmscontainer*/
+
+.carousel__contenedorfilms {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.carousel__listafilms {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 800px;
+    height: 500px;
+    margin: 5px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel__listafilms p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.carousel__listafilms div {
+    margin: 15px;
+}
+
+.carousel__listafilms div img:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.new {
+    width: 100%;
+}
+
+.rogue {
+    width: 100%;
+}
+
+.force {
+    width: 100%;
+}
+
+.jedi {
+    width: 100%;
+}
+
+
+.carousel__anterior {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    object-fit: cover;
+    background: none;
+    border: none;
+    left: 1%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.carousel__siguiente {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    object-fit: cover;
+    background: none;
+    border: none;
+    right: 1%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+
+/*seriescontainer*/
+
+.carousel__contenedorseries {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.carousel__listaseries {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 800px;
+    height: 500px;
+    margin: 5px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel__listaseries p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.carousel__listaseries div {
+    margin: 15px;
+    width: 10%;
+
+}
+
+.carousel__listaseries div img:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.boba {
+    width: 100%;
+}
+
+.clone {
+    width: 100%;
+}
+
+.obi {
+    width: 100%;
+}
+
+.mando {
+    width: 100%;
+}
+
+
+.carousel__anterior2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    object-fit: cover;
+    background: none;
+    border: none;
+    left: 1%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.carousel__siguiente2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    object-fit: cover;
+    background: none;
+    border: none;
+    right: 1%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.div-film i {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 1.5em;
+    top: 2.5em;
+    left: 7.1em;
+    z-index: 1;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+}
+
+.div-film i:hover {
+    cursor: pointer;
+}

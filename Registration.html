@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Registration.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div style="text-align: center;">
+            <img src="imagenes/Rectangle 44.png" alt="">
+
+            <div class="centrado"><h3>WELCOME TO <br> THE DARK SIDE</h3></div>
+
+            <div class="already"><p>Already a member ?</p></div>
+
+            <a class="buttonLog" href="SignIn.html">Log in</a>
+
+            <div class="texto-encima1"><h3>First Name</h3></div>
+            <input type="text" class="First" name="First Name" id="first" placeholder="Ex: Valentina" size="40">
+
+            <div class="texto-encima2"><h3>Last Name</h3></div>
+            <input type="text" class="Last" name="Last Name" id="last" placeholder="Ex: Arango Tenorio" size="40">
+
+            <div class="texto-encima3"><h3>Email</h3></div>
+            <input type="email" class="Email" name="Email" id="email" placeholder="Enter your email" size="40">
+
+            <div class="texto-encima4"><h3>Password</h3></div>
+            <input type="password" class="password" id="password" placeholder="*********" size="40">
+
+            <button type="button" class="buttonCreate" onclick="signup()" id="userList" href="SignIn.html">Create account</button>
+
+            <a class="avatar" href="favorindex.html">Choose an avatar</a>
+        </div>
+    </div>
+
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="bar"></i>
+        </label>
+        <a href="starwars.html">
+            <button class="start">
+                <img src="imagenes/start.png" alt="startimg" class="deathstar">
+            </button>
+        </a>
+                <div class="navbar">
+                    <a href="back" class="display">
+                    <img src="imagenes/display.png" alt="displayimg" class="displaybackground">
+                    </a>
+                    <ul class="textdisplay">
+                        <li><a class="active" href="starwars.html">About Us</a></li>
+                        <li><a href="starwars.html">Characters</a></li>
+                        <li><a href="filmesindex.html">Movies/Series</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+
+                </div>
+                <button class="signup">
+                    <li><a class="login" href="SignIn.html">Sign In</a></li>
+                    <img src="imagenes/log.png" alt="logimg" class="log">
+                </button>
+    </nav>
+<script src="Registration.js"></script>
+</body>
+</html>

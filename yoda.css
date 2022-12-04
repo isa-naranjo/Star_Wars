@@ -1,0 +1,264 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+
+/*Barra de navegación*/
+nav{
+    position: sticky;
+    background:transparent;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    z-index: 99;
+}
+
+.start{
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    padding: 40px 45px;
+    cursor: pointer;
+    top: 0px;
+    left: 10px;
+}
+
+    .deathstar{
+        height: 55px;
+    }
+
+
+.navbar{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    top: 20px;
+}
+
+.display{
+    position: fixed;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    top: 20px;
+
+}
+
+    .displaybackground{
+        width: 85%;
+        margin: 0px 5px;
+    }
+
+        .textdisplay{
+            position: fixed;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            float: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            top: 5px;
+        }
+
+        .textdisplay li{
+            display: inline-block;
+            line-height: 10px;
+            margin: 40px 5px;
+        }
+            .textdisplay li a{
+                color: white;
+                padding: 10px 30px;
+                border-radius: 3px;
+            }
+
+            li a.active, li a:hover{
+                background-color: rgb(83, 108, 129);
+                transition: 2s;
+                cursor: pointer;
+            }
+
+.signup{
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    right: 40px;
+    top: 45px;
+    cursor: pointer;
+}
+    .login{
+        position: fixed;
+        right: 100px;
+        top: 55px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    .log{height: 40px;
+    margin-top: -20px;}
+
+#check{
+    display: none;
+}
+
+
+
+body {
+    background-image: url(imagenes/56dbef010a1746ccec83c86e8bf29baf\ 1.png);
+    background-size:cover;
+    color:white;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.centrado{
+    position: absolute;
+    margin-top:70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    letter-spacing: 20px;
+}
+
+.Rectangle{
+    position: absolute;
+    top: 48px;
+    left: 15%;
+}
+
+.texto-encima1{
+    position: absolute;
+    top: 170px;
+    left: 20%;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.p1{
+    position: absolute;
+    top: 170px;
+    left: 35%;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.texto-encima2{
+    position: absolute;
+    top: 220px;
+    left: 20%;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.p2{
+    position: absolute;
+    top: 220px;
+    left: 35%;
+    font-size: 14px;
+    letter-spacing:2px;
+}
+
+.texto-encima3{
+    position: absolute;
+    top: 600px;
+    left: 20%;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.p3{
+    position: absolute;
+    top: 640px;
+    left: 20%;
+    text-align: justify;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: light;
+}
+
+.video{
+    position: absolute;
+    border-radius: 5px;
+    top: 300px;
+    left: 300px;
+}
+
+
+.char{
+    display: flex;
+    align-self: flex-end;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 90px;
+    right: 70px;
+}
+
+
+
+.person{
+    position: absolute;
+    top: 178px;
+    left: 23%;
+}
+
+.name{
+    position: absolute;
+    top: 181px;
+    left: 25%;
+    height: 20%;
+}
+
+.height{
+    position: absolute;
+    top: 242px;
+    left: 23%;
+    height: 20%;
+}
+
+
+.mass{
+    position: absolute;
+    top: 355px;
+    left: 23%;
+    height: 20%;
+}
+
+.hair_color{
+    position: absolute;
+    top: 475px;
+    left: 23%;
+    height: 20%;
+}
+
+.skin_color{
+    position: absolute;
+    top: 598px;
+    left: 23%;
+    height: 20%;
+}
+
+.eye_color{
+    position: absolute;
+    top: 709px;
+    left: 23%;
+    height: 20%;
+}
+
+.img{
+    position: absolute;
+    top: 407px;
+    left: 65%;
+    height: 20%;
+}
